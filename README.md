@@ -10,7 +10,8 @@ A [Hugo](https://gohugo.io/) site with the [tannevaled/hextra](https://github.co
 fork of the [Hextra](https://github.com/imfing/hextra) theme (pinned to v0.16.0),
 built the same way as the [go-numerics documentation](https://github.com/go-numerics/docs),
 with go-bignum's branding. It documents
-[`go-bignum/bigfloat`](https://github.com/go-bignum/bigfloat), one section.
+[`go-bignum/bigfloat`](https://github.com/go-bignum/bigfloat), one section
+(released v0.1.0, every function at or below mpmath's time).
 
 ## Versions
 
@@ -26,8 +27,8 @@ tagged:
 
 `https://go-bignum.github.io/docs/` redirects to `latest/`. Each push to `main`
 replaces the directory of the version it describes, and nothing else. `bigfloat`
-has no release tag yet, so the pages describe its `main` branch and are
-published under `main/`.
+is released v0.1.0, so the pages describe that release and are published under
+`0.1/` (also `latest/`).
 
 ## Pages
 
