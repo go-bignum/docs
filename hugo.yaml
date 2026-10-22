@@ -5,7 +5,7 @@
 # minor version among the libraries the pages describe (0.1, 0.2, ...), or
 # "main" while none of them is tagged. The CI sets it through --baseURL, from
 # params.libraries below. This default is the same build.
-baseURL: "https://go-bignum.github.io/docs/main/"
+baseURL: "https://go-bignum.github.io/docs/0.1/"
 title: "go-bignum"
 # themes/hextra is the tannevaled/hextra fork, pinned at a release tag:
 # upstream Hextra plus opt-in features (partial menu items, combos,
@@ -87,10 +87,10 @@ params:
 
   # The release of each library these pages describe, "main" while it has no
   # tag. The newest minor version among the tagged ones is the documentation's
-  # version label (v0.1.2 -> 0.1): the CI reads it here. bigfloat has no tag
-  # yet, so the documentation is version "main".
+  # version label (v0.1.2 -> 0.1): the CI reads it here. bigfloat is released
+  # v0.1.0, so the documentation is version 0.1.
   libraries:
-    bigfloat: "main"
+    bigfloat: "v0.1.0"
   versions:
     # The version selector shows "main" with the development icon.
     development: "main"
