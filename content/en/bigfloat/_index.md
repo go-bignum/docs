@@ -4,12 +4,12 @@ weight: 10
 description: "Correctly rounded elementary functions and constants on math/big.Float, at any precision and in all six rounding modes."
 ---
 
-<!-- From go-bignum/bigfloat v0.1.0, README.md, docs/design.md and docs/perf.md: the text is the library's, summarised, with links into the repository. Change it there first. -->
+<!-- From go-bignum/bigfloat v0.2.0, README.md, docs/design.md and docs/perf.md: the text is the library's, summarised, with links into the repository. Change it there first. -->
 
-**Status: released v0.1.0.**
+**Status: released v0.2.0.**
 
 ```sh
-go get github.com/go-bignum/bigfloat@v0.1.0
+go get github.com/go-bignum/bigfloat@v0.2.0
 ```
 
 Correctly rounded elementary functions and constants on Go's `math/big.Float`,
@@ -32,7 +32,7 @@ z.Acc()               // big.Below / big.Exact / big.Above: the side of the exac
 | exponentials and logarithms | `Exp`, `Expm1`, `Log`, `Log1p`, `Log2`, `Log10`, `Pow` |
 | trigonometric | `Sin`, `Cos`, `Tan`, `Asin`, `Acos`, `Atan`, `Atan2` |
 | hyperbolic | `Sinh`, `Cosh`, `Tanh`, `Asinh`, `Acosh`, `Atanh` |
-| constants | `Pi`, `E`, `Ln2`, `Ln10`, `EulerGamma` |
+| constants | `Pi`, `E`, `Ln2`, `Ln10`, `EulerGamma`, `Catalan` |
 | oracle harness | package `oracle`: mpmath driven from Go, correctly rounded reference values, golden fixtures; `oracle.Self` uses this package as the reference |
 
 ## The guarantee
@@ -100,9 +100,9 @@ stay correctly rounded against mpmath on 28 840 cases in all six rounding
 modes. bigfloat returns a certified `Acc()`; mpmath returns results within its
 working precision. The full table, every function at 53, 113, 200 and 1000
 bits, is
-[`docs/perf.md`](https://github.com/go-bignum/bigfloat/blob/v0.1.0/docs/perf.md);
+[`docs/perf.md`](https://github.com/go-bignum/bigfloat/blob/v0.2.0/docs/perf.md);
 the benchmark program is
-[`cmd/bench`](https://github.com/go-bignum/bigfloat/tree/v0.1.0/cmd/bench).
+[`cmd/bench`](https://github.com/go-bignum/bigfloat/tree/v0.2.0/cmd/bench).
 
 ## The oracle, for other packages
 
