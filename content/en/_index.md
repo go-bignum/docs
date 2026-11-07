@@ -13,19 +13,19 @@ provides correctly rounded elementary functions and constants on Go's
 and no dependencies. Its tests replay golden fixtures certified with
 [mpmath](https://mpmath.org) at high precision.
 
-`bigfloat` is **released v0.1.0**: every function is at or below mpmath's time
+`bigfloat` is **released v0.2.0**: every function is at or below mpmath's time
 on one core, and the results stay correctly rounded.
 
 ## The libraries
 
 | Library | Status | What it does |
 | --- | --- | --- |
-| [bigfloat]({{< relref "bigfloat" >}}) | released v0.1.0 | roots, exponentials and logarithms, trigonometric and hyperbolic functions, `Pow` and the constants π, e, ln 2, ln 10 and γ, correctly rounded; the `oracle` package drives mpmath from Go and stores golden fixtures |
+| [bigfloat]({{< relref "bigfloat" >}}) | released v0.2.0 | roots, exponentials and logarithms, trigonometric and hyperbolic functions, `Pow` and the constants π, e, ln 2, ln 10, γ and Catalan's G, correctly rounded; the `oracle` package drives mpmath from Go and stores golden fixtures |
 
 ## Install
 
 ```sh
-go get github.com/go-bignum/bigfloat@v0.1.0
+go get github.com/go-bignum/bigfloat@v0.2.0
 ```
 
 The module is pure Go (`CGO_ENABLED=0`) and its `go.mod` says Go 1.27.1.
